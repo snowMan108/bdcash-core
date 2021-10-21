@@ -1,0 +1,70 @@
+{
+  "name": "@bdcash/core",
+  "version": "1.0.0",
+  "description": "Scrypta Javascript Library for build Blockchain enabled applications.",
+  "private": false,
+  "main": "src/index.js",
+  "bin": {
+    "scrypta": "./src/cli.js"
+  },
+  "typings": "./types/index.d.ts",
+  "scripts": {
+    "test:local": "mocha test/test.local.js",
+    "test:xsid": "mocha test/test.xsid.js",
+    "test:contracts": "mocha test/test.contracts.js",
+    "test:static": "node test/test.static.js",
+    "test:p2p": "node test/test.p2p.js",
+    "test:planum": "node test/test.planum.js",
+    "test:permissioned": "node test/test.planum.permissioned.js",
+    "test:tx": "node test/test.transactions.js",
+    "ts:dtslint": "dtslint ./types/",
+    "test:nodes": "mocha test/test.nodes.js",
+    "pub": "npm publish --access public"
+  },
+  "keywords": [
+    "blockchain",
+    "scrypta",
+    "scryptachain"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legendarydev007/bdcash-core.git"
+  },
+  "author": "bdcash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/legendarydev007/bdcash-core/issues"
+  },
+  "homepage": "https://github.com/legendarydev007/bdcash-core#readme",
+  "dependencies": {
+    "@scrypta/bip39": "^3.0.4",
+    "@scrypta/coinkey": "^3.0.2",
+    "axios": "^0.21.0",
+    "binstring": "^0.2.1",
+    "browser-cookies": "^1.2.0",
+    "create-hash": "^1.2.0",
+    "crypto-hashing": "^1.0.0",
+    "crypto-js": "^4.0.0",
+    "ecdsa": "^0.7.0",
+    "eckey": "^1.0.1",
+    "ecurve": "^1.0.6",
+    "hdkey": "^2.0.1",
+    "lodash": "^4.17.20",
+    "mathjs": "^8.0.1",
+    "node-rsa": "^1.1.1",
+    "ripemd160": "^2.0.2",
+    "secp256k1": "^4.0.2",
+    "secure-random": "^1.1.2",
+    "socket.io": "^3.0.3",
+    "socket.io-client": "^3.0.3",
+    "transaction-hex-decoder": "^1.0.2",
+    "uuid": "^8.3.1",
+    "yargs": "^16.1.1"
+  },
+  "devDependencies": {
+    "conditional-type-checks": "^1.0.5",
+    "dtslint": "^4.0.6",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.3"
+  }
+}
